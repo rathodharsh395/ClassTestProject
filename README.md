@@ -1,20 +1,20 @@
 # ClassTestProject Date:11.04.2023
 1. DBConfig-SetterBasedInjection
 Create a class called DBconfig  with the below attributes
-driverName	String
-url	        String
-userName	  String
-password	  String
+driverName	 String,
+url	        String,
+userName	   String,
+password	   String,
  
 Include getters and setters for all the above mentioned attributes.
 DBConfig class should be registered as a bean with the spring container via XML file
 The  attributes inside the DBConfig should be configured in the xml with the below values
  
-Attribute Name	Value
-driverName    	com.mysql.jdbc.Driver
-url	            jdbc:mysql:@localhost:3306/dbName
-userName	      root
-password	      root
+Attribute Name	& Value
+driverName    	com.mysql.jdbc.Driver,
+url	            jdbc:mysql:@localhost:3306/dbName,
+userName	      root,
+password	      root,
  
 The values for these attributes should be injected via setter based injection.
 Create class called EmployeeDAO that has below attribute
@@ -30,18 +30,18 @@ Create a class called Driver with the main method. Retrieve the EmployeeDAO obje
 
 
 2. Create a Order class with the below private attributes
-orderNumber	  long
-orderDate  	  LocalDate
-orderAmount 	double
+orderNumber	  long,
+orderDate  	  LocalDate,
+orderAmount 	double,
  
 Include getter and setter methods for all the above attributes.
 Create multiple Bean of Order 
 
 
 Create a Customer class with the below private attributes
-customerId     	long
-contactDetails	AddressBook
-List<Order>	    order
+customerId     	long,
+contactDetails	AddressBook,
+List<Order>	    order,
  
 Include getter and setter methods for all the above attributes.
 
@@ -50,15 +50,15 @@ Include getter and setter methods for all the above attributes.
 
 
 Create an AddressBook class with the below private attributes
-phoneNumber	String
-tempAddress	Address
+phoneNumber	String,
+tempAddress	Address,
  
 Include getter and setter methods for all the above attributes.
 Create an Address class with the private attributes
-houseName	String
-Street	  String
-City	    String
-State	    String
+houseName	String,
+Street	  String,
+City	    String,
+State	    String,
  
 Include getter and setter methods for all the above attributes.
 AddressBook should be registered as a bean with the spring container via java based configuration 
